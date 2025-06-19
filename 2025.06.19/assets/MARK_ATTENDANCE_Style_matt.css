@@ -1,0 +1,258 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    /* font-family: 'Lexend', sans-serif; */
+    font-family: 'Montserrat', sans-serif;
+}
+
+:root {
+    --backBtn-Color: #E5EFFF;
+    --txtBtn-Color: #367BF5;
+    --mBtn-Color: #B368FF;
+    --white: #FFFFFF;
+    --lBack-Color: #E6FFE7;
+    --black: #000;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 9px 20px;
+    margin-top: 50px;
+}
+
+.clas {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.sub {
+    font-size: 14px;
+    font-weight: 700;
+    margin-left: 80px;
+}
+
+
+.date-time {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 12px;
+}
+
+.day-tim {
+    background-color: var(--lBack-Color);
+    color: var(--black);
+    font-weight: 550;
+    font-size: 15px;
+    letter-spacing: 1px;
+    padding: 9px 20px;
+    border-radius: 5px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 9px 20px;
+}
+
+.btn-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    overflow: auto;
+}
+
+.btn {
+    width: 100px;
+    padding: 10px 45px;
+    border-radius: 5px;
+    background: var(--backBtn-Color);
+    border: none;
+    color: var(--txtBtn-Color);
+    cursor: pointer;
+}
+
+.aBtn {
+    background-color: #FEE4E2;
+    color: #EA3D2F;
+}
+
+.mark form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+}
+
+#txtid {
+    padding: 8px 9px;
+    font-size: 14px;
+}
+
+.mBtn {
+    width: 317px;
+    height: 40px;
+    flex-shrink: 0;
+    font-family: 'Montserrat', sans-serif;
+    padding: 8px 22px;
+    font-size: 19px;
+    color: #FFF;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    background-color: var(--mBtn-Color);
+    border-radius: 7px;
+    cursor: pointer;
+    border: none;
+    color: var(--white);
+}
+
+.fixed-width-textarea {
+    width: 317px;
+    /* Set the desired width here */
+    height: 35px;
+    /* Set the desired height here */
+    resize: none;
+    /* Prevent resizing of the textarea */
+}
+
+@media (max-width:300px) {
+
+    .top {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .clas {
+        font-size: 12px;
+        font-weight: 700;
+    }
+
+    .sub {
+        font-size: 12px;
+        font-weight: 700;
+        margin-left: 50px;
+    }
+
+    .date-time {
+        display: flex;
+        justify-content: space-between;
+        padding: 8px 20px;
+        gap: 5px;
+    }
+
+    .day-tim {
+        background-color: var(--lBack-Color);
+        color: var(--black);
+        font-size: 13.2px;
+        font-weight: 500;
+        padding: 10px 20px;
+        border-radius: 5px;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        padding: 9px 20px;
+    }
+
+    .btn-row {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .btn {
+        width: 100px;
+        padding: 10px 45px;
+        border-radius: 5px;
+        background: var(--backBtn-Color);
+        border: none;
+        font-size: 12px;
+        font-weight: 700;
+        color: var(--txtBtn-Color);
+        cursor: pointer;
+    }
+
+    .mark form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 14px;
+    }
+
+    #txtid {
+        padding: 8px 8px;
+        font-size: 14px;
+    }
+
+    .mBtn {
+        width: 300px;
+        height: 40px;
+        flex-shrink: 0;
+        color: #FFF;
+        text-align: center;
+        font-family: Montserrat;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        padding: 10px 25px;
+        font-size: 10px;
+        letter-spacing: 5px;
+        background-color: var(--mBtn-Color);
+        border-radius: 7px;
+        cursor: pointer;
+        border: none;
+    }
+}
+
+.finalMark {
+    display: inline-block;
+    padding: 10px 20px; /* Adjust padding as needed */
+    background-color: #f6edff; /* Button background color */
+    color: #B368FF; /* Text color */
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px; /* Font size */
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+    width: 150px; /* Fixed width */
+    margin-right: 5px;
+}
+
+.shareonWp{
+    display: inline-block;
+    padding: 10px 20px; /* Adjust padding as needed */
+    background-color: #e6fffc; /* Button background color */
+    color: #075E54; /* Text color */
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px; /* Font size */
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+    width: 150px; /* Fixed width */
+}
