@@ -75,8 +75,8 @@ We would like to thank:
 
 ## 📁 Resources
 
-- 📄 **Manuals ("##L" and "#L")**: [manual folder](./manuals/)
-- 📊 **Predefined Excel Formats**: [pre-defined-formats folder](./pre-defined-formats/)
+- 📄 **Manuals ("##L" and "#L")**: [manual folder](./2025.06.19/manuals/)
+- 📊 **Predefined Excel Formats**: [pre-defined-formats folder](./2025.06.19/pre-defined-formats/)
 
 ---
 
