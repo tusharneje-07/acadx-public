@@ -1,5 +1,7 @@
 
-
+<p align="center">
+  <img src="https://cdn.jsdelivr.net/gh/tusharneje-07/acadx-public@main/2025.06.19/assets/logo_light.png" alt="Acadx Logo" width="200"/>
+</p>
 
 
 # Acadx Public Repository
@@ -92,5 +94,12 @@ https://cdn.jsdelivr.net/gh/tusharneje-07/acadx-public@main/2025.06.19/assets/lo
 
 ---
 
+## 📬 Contact
+
+For collaboration, queries, or contributions, please reach out via [Tushar's Website](https://tusharneje.online/) or through LinkedIn.
+
+---
+
+© 2025 Team Acadx. All rights reserved.
 
 
