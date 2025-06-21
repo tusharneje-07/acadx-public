@@ -1,6 +1,7 @@
 {
     "in-app-alerts": [
-        "New Version of Acadx is Live! <a href='https://www.acadx.tusharneje.online/'>Learn More</a>",
-        "New Version of Acadx is Live! <a href='https://www.acadx.tusharneje.online/'>Learn More</a>"
-    ]
+        "<i class='fa-solid fa-wand-magic-sparkles'></i> New Version of Acadx is Live! <a href='https://www.acadx.tusharneje.online/'>Learn More</a>",
+        "<i class='fa-solid fa-wand-magic-sparkles'></i> SAMS is Updated to Newer Version <a href='https://www.acadx.tusharneje.online/'>Learn More</a>",
+        "<i class='fa-solid fa-bell'></i> Acadx Version 2025.06.09 is Live! <a href='https://github.com/tusharneje-07/acadx-public'>Learn More</a>"
+        ]
 }
