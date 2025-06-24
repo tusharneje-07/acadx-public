@@ -1,0 +1,72 @@
+# === General ===
+*.iml
+*.ipr
+*.iws
+*.class
+*.log
+*.swp
+.DS_Store
+.idea/
+.gradle/
+build/
+captures/
+.externalNativeBuild/
+
+# === Local config files ===
+local.properties
+*.keystore
+*.jks
+
+# === Android Studio ===
+*.hprof
+*.orig
+*.bak
+.gradle/
+.idea/libraries/
+.idea/modules.xml
+.idea/workspace.xml
+.idea/navEditor.xml
+.idea/assetWizardSettings.xml
+.idea/.name
+
+# Android Studio 3.1+ cache
+.idea/caches/
+.idea/compile-server/
+.idea/kotlinc.xml
+.idea/kotlinLanguageSettings.xml
+.idea/tasks.xml
+
+# === Gradle Wrapper ===
+.gradle/
+**/build/
+!gradle/wrapper/gradle-wrapper.jar
+
+# === OS-specific ===
+# macOS
+*.DS_Store
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# === Kotlin ===
+*.kotlin_module
+
+# === Misc ===
+# Firebase / Crashlytics
+fabric.properties
+crashlytics.properties
+
+# === Jetpack Compose Preview ===
+.idea/preview.html
+
+# === Signing files ===
+**/signing.properties
+**/signingConfigs.gradle
+
+# === Environment files ===
+.env
+*.env
+.env.*
