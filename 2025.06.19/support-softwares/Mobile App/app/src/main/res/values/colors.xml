@@ -3,6 +3,7 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="colorAccent">#B62C2C</color>
+    <color name="actionBar">#661414</color>
 
     <color name="colorPrimary">#271616</color>
     <color name="colorPrimaryVariant">#3700B3</color>
