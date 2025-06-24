@@ -77,6 +77,7 @@ We would like to thank:
 
 - 📄 **Manuals ("##L" and "#L")**: [manual folder](./2025.06.19/manuals/)
 - 📊 **Predefined Excel Formats**: [pre-defined-formats folder](./2025.06.19/pre-defined-formats/)
+- 📲 **Mobile Application (Pre-Release)**: [pre-release-app]('https://github.com/tusharneje-07/acadx-public/releases/download/application/acadx-mobile-0.0.1.apk')
 
 ---
 
