@@ -2,7 +2,6 @@ package com.example.acadx_mobile_app_0_1;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.ActivityNotFoundException;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.net.Uri;
@@ -21,8 +20,7 @@ public class MainActivity extends AppCompatActivity {
     private WebView webView;
     private ProgressBar progressBar;
 
-    // Replace this with your actual website URL
-    private static final String BASE_URL = "https://dev.acadx.xyz/";
+    private static final String API_URL = "https://raw.githubusercontent.com/tusharneje-07/acadx-public/refs/heads/main/2025.06.19/notifications/web-handler.json"; // Replace with your real API
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,7 +40,6 @@ public class MainActivity extends AppCompatActivity {
                 String url = request.getUrl().toString();
 
                 if (url.startsWith("whatsapp://")) {
-                    // Handle WhatsApp links
                     Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
                     PackageManager pm = getPackageManager();
                     if (intent.resolveActivity(pm) != null) {
@@ -53,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
                     return true;
                 }
 
-                view.loadUrl(url); // Load other links normally
+                view.loadUrl(url); // Load other links
                 return true;
             }
 
@@ -76,7 +73,24 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        webView.loadUrl(BASE_URL);
+        // Fetch URL from API and load it
+        WebUrlFetcher fetcher = new WebUrlFetcher();
+        fetcher.fetchWebUrl(API_URL, new WebUrlFetcher.Callback() {
+            @Override
+            public void onResult(String webUrl) {
+                runOnUiThread(() -> {
+                    webView.loadUrl(webUrl);
+                });
+            }
+
+            @Override
+            public void onError(Exception e) {
+                runOnUiThread(() -> {
+                    Toast.makeText(MainActivity.this, "Failed to load URL", Toast.LENGTH_SHORT).show();
+                    e.printStackTrace();
+                });
+            }
+        });
     }
 
     @Override
